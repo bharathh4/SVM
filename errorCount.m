@@ -25,7 +25,8 @@ Class3_X=transpose(Class3_X);%Each feature in a column
 c3=[Class3_X 3*ones(length(Class1_X),1)];
 
 %%
-load SVMstructClass1Class2.mat
+
+load SVMstructClass1Class2
 
 features=[c1;c2];
 predicted=[];
@@ -41,8 +42,8 @@ normal=(1/2000)*confusionMatrix
 
 %%
 
+load SVMstructClass2Class3
 
-load SVMstructClass2Class3.mat
 clear features
 clear confusionMatrix
 clear normal
@@ -63,8 +64,7 @@ normal=(1/2000)*confusionMatrix
 
 
 %%
-load SVMstructClass1Class3.mat
-
+load SVMstructClass1Class3
 clear features
 clear confusionMatrix
 clear normal
